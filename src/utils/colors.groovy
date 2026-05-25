@@ -1,6 +1,6 @@
 package utils
 
-class Colors {
+class colors {
     static final String RESET   = "\033[0m"
     static final String BOLD    = "\033[1m"
     static final String BLACK   = "\033[30m"

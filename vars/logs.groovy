@@ -1,26 +1,26 @@
-import utils.Colors
+import utils.colors
 
 void info(String iMessage, boolean isTextBold=false){
-        String style = isTextBold ? Colors.BOLD : ""
-        println("${style}${Colors.BLUE}[INFO] - ${iMessage}${Colors.RESET}")
+        String style = isTextBold ? colors.BOLD : ""
+        println("${style}${colors.BLUE}[INFO] - ${iMessage}${colors.RESET}")
     }
 
 void warning(String iMessage, boolean isTextBold=false){
-    String style = isTextBold ? Colors.BOLD : ""
-    println("${style}${Colors.ORANGE}[WARNING] - ${iMessage}${Colors.RESET}")
+    String style = isTextBold ? colors.BOLD : ""
+    println("${style}${colors.ORANGE}[WARNING] - ${iMessage}${colors.RESET}")
 }
 
 void error(String iMessage, boolean isTextBold=false){
-    String style = isTextBold ? Colors.BOLD : ""
-    println("${style}${Colors.RED}[ERROR] - ${iMessage}${Colors.RESET}")
+    String style = isTextBold ? colors.BOLD : ""
+    println("${style}${colors.RED}[ERROR] - ${iMessage}${colors.RESET}")
 }
 
 void debug(String iMessage, boolean isTextBold=false){
-    String style = isTextBold ? Colors.BOLD : ""
-    println("${style}${Colors.BLACK}[DEBUG] - ${iMessage}${Colors.RESET}")
+    String style = isTextBold ? colors.BOLD : ""
+    println("${style}${colors.BLACK}[DEBUG] - ${iMessage}${colors.RESET}")
 }
 
 void system(String iMessage, boolean isTextBold=false){
-    String style = isTextBold ? Colors.BOLD : ""
-    println("${style}${Colors.YELLOW}[SYSTEM] - ${iMessage}${Colors.RESET}")
+    String style = isTextBold ? colors.BOLD : ""
+    println("${style}${colors.YELLOW}[SYSTEM] - ${iMessage}${colors.RESET}")
 }
