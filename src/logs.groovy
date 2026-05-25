@@ -1,5 +1,3 @@
-package src
-
 class Colors {
     static final String RESET   = "\033[0m"
     static final String BOLD    = "\033[1m"
@@ -11,28 +9,29 @@ class Colors {
     static final String BLUE    = "\033[34m"
     static final String ORANGE  = "\033[38;5;208m"
 
-    void info(String iMessage, String isTextBold=false){
+}
+
+void info(String iMessage, Bool isTextBold=false){
         String style = isTextBold ? BOLD : ""
-        println("${style}$${BLUE}[INFO] - ${iMessage}${RESET}")
+        println("${style}${BLUE}[INFO] - ${iMessage}${RESET}")
     }
 
-    void warning(String iMessage, String isTextBold=false){
-        String style = isTextBold ? BOLD : ""
-        println("${style}$${ORANGE}[WARNING] - ${iMessage}${RESET}")
-    }
+void warning(String iMessage, Bool isTextBold=false){
+    String style = isTextBold ? BOLD : ""
+    println("${style}${ORANGE}[WARNING] - ${iMessage}${RESET}")
+}
 
-    void error(String iMessage, String isTextBold=false){
-        String style = isTextBold ? BOLD : ""
-        println("${style}$${RED}[ERROR] - ${iMessage}${RESET}")
-    }
+void error(String iMessage, Bool isTextBold=false){
+    String style = isTextBold ? BOLD : ""
+    println("${style}${RED}[ERROR] - ${iMessage}${RESET}")
+}
 
-    void debug(String iMessage, String isTextBold=false){
-        String style = isTextBold ? BOLD : ""
-        println("${style}$${BLACK}[DEBUG] - ${iMessage}${RESET}")
-    }
+void debug(String iMessage, Bool isTextBold=false){
+    String style = isTextBold ? BOLD : ""
+    println("${style}${BLACK}[DEBUG] - ${iMessage}${RESET}")
+}
 
-    void system(String iMessage, String isTextBold=false){
-        String style = isTextBold ? BOLD : ""
-        println("${style}$${YELLOW}[SYSTEM] - ${iMessage}${RESET}")
-    }
+void system(String iMessage, Bool isTextBold=false){
+    String style = isTextBold ? BOLD : ""
+    println("${style}${YELLOW}[SYSTEM] - ${iMessage}${RESET}")
 }
