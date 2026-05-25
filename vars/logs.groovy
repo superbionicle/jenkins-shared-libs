@@ -7,7 +7,7 @@ void info(String iMessage, boolean isTextBold=false){
 
 void warning(String iMessage, boolean isTextBold=false){
     String style = isTextBold ? colors.BOLD : ""
-    println("${style}${colors.ORANGE}[WARNING]\t\t - ${iMessage}${colors.RESET}")
+    println("${style}${colors.ORANGE}[WARNING]\t - ${iMessage}${colors.RESET}")
 }
 
 void error(String iMessage, boolean isTextBold=false){
@@ -22,5 +22,5 @@ void debug(String iMessage, boolean isTextBold=false){
 
 void system(String iMessage, boolean isTextBold=false){
     String style = isTextBold ? colors.BOLD : ""
-    println("${style}${colors.YELLOW}[SYSTEM]\t\t - ${iMessage}${colors.RESET}")
+    println("${style}${colors.YELLOW}[SYSTEM]\t - ${iMessage}${colors.RESET}")
 }
