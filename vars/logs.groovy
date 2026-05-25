@@ -1,4 +1,4 @@
-import utils.colors
+import utils.Colors
 
 void info(String iMessage, boolean isTextBold=false){
         String style = isTextBold ? Colors.BOLD : ""
